@@ -21,6 +21,19 @@ python pose_estimation/pose_estimation.py --video_path 'path/to/video' --model_p
 python video_processing/video_processor.py --input_path 'path/to/input_video' --output_path 'path/to/output_video'
 ```
 
+## Code Structure
+The code has been modularized for better readability and maintainability. Here are the key modules:
+
+### pose_estimation
+- `pose_estimation.py`: Main script for pose estimation.
+- `config_loader.py`: Loads configuration from a JSON file and command-line arguments.
+- `utils.py`: Utility functions like data validation.
+- `model_loader.py`: Loads machine learning models for pose estimation.
+
+### video_processing
+- `video_processor.py`: Main script for video processing.
+- `video_downloader.py`: Utility script for downloading videos (if needed).
+
 ## Configuration
 You can specify the settings in a `config.json` file. See `config_sample.json` for an example.
 
@@ -31,3 +44,4 @@ You can specify the settings in a `config.json` file. See `config_sample.json` f
 
 ## License
 See [LICENSE](LICENSE) for details.
+
