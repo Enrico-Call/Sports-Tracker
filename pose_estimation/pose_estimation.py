@@ -9,6 +9,7 @@ OUTPUT_PATH = 'output_video.mp4'
 # Load PoseNet model
 model = tf.keras.models.load_model('path/to/posenet/model')
 
+
 def estimate_pose(frame):
     input_image = cv2.resize(frame, (224, 224))
     input_image = np.expand_dims(input_image, axis=0)

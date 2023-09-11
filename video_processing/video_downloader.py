@@ -3,6 +3,7 @@ from pytube import YouTube
 YOUTUBE_URL = 'https://www.youtube.com/watch?v=3r7d4qhKCp8'
 OUTPUT_PATH = "."
 
+
 def download_youtube_video(url, output_path=OUTPUT_PATH):
     try:
         # Create a YouTube object
